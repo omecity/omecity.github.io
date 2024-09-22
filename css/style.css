@@ -36,3 +36,7 @@ ul.navbar {
   margin: 0;
 }
  
+ul.navbar li {
+  margin: 0px;
+  padding: 12px;
+}
