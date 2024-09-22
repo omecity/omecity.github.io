@@ -27,7 +27,7 @@ body{
 }
 
 .title-super{
-  font-size: 60px;
+  font-size: 30px;
 }
 
 ul.navbar {
@@ -46,8 +46,4 @@ ul.navbar li {
   height: 60px;   
   text-align: left;
   width: 120px;
-}
-
-a.current:visited{
-  color: #FF8100;
 }
