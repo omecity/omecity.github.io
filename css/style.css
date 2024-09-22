@@ -47,3 +47,7 @@ ul.navbar li {
   text-align: left;
   width: 120px;
 }
+
+a.current:visited{
+  color: #FF8100;
+}
