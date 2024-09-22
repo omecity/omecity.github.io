@@ -29,3 +29,10 @@ body{
 .title-super{
   font-size: 60px;
 }
+
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ 
