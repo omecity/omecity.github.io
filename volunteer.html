@@ -12,11 +12,13 @@
     <style>
       /* Basic styling */
       .accordion {
+          /*color: #FF8100;*/
           cursor: pointer;
           padding: 18px;
           width: 100%;
           text-align: left;
-          background-color: #eee;
+          /*background-color: #333333;*/
+          background-color: #FF8100;
           border: none;
           outline: none;
           transition: background-color 0.5s;
@@ -26,6 +28,7 @@
           padding: 0 18px;
           background-color: white;
           display: none;
+          color: blue;
           overflow: hidden;
       }
     </style>
@@ -53,7 +56,29 @@
 	      <li><a href="volunteer.html">Volunteer</a></li>		   
 	      </ul> 
         </div>
-	  </div>
-    </div>   			<!-- close div tag for container -->
+        <div class="col-md-6">
+          <button class="accordion">Java & Python -- Instructor
+Radford School, El Paso, TX -- 2019/20, 2020/21 </button>
+          <div class="panel">
+            <p>Content for Section 1</p>
+          </div>
+        </div>
+      </div>
+    </div>          <!-- close div tag for container -->
+    <script>           
+    // JavaScript to toggle the accordion
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
   </body>
 </html>
