@@ -9,7 +9,9 @@
     <link href='http://fonts.googleapis.com/css?family=Geostar' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
+    <!-- <link rel="stylesheet" href="css/info.css"> -->
+    <link rel="stylesheet" href="css/new-style.css">
+<!--     <style>
       /* Basic styling */
       .accordion {
           /*color: #FF8100;*/
@@ -32,9 +34,11 @@
           color: blue;
           overflow: hidden;
       }
-    </style>
+    </style> -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
+    <!-- <script type="text/javascript" src="js/info.js"></script> -->
+    <script type="text/javascript" src="js/helper.js"></script>
   </head>
   <body>
     <div class="container">	  <!-- open div tag for container -->
@@ -52,38 +56,73 @@
       <!-- navigation bar -->
       <div class="row">
         <div class="col-md-2">
-	      <ul class="navbar">
-	      <li><a href="index.html" class="current">Home</a></li>	
-	      <li><a href="volunteer.html">Volunteer</a></li>		   
-	      </ul> 
+  	      <ul class="navbar">
+  	      <li><a href="index.html" class="current">Home</a></li>	
+  	      <li><a href="volunteer.html">Volunteer</a></li>		   
+  	      </ul> 
         </div>
         <div class="col-md-8">
-          <button class="accordion">  Microsoft Philanthropies TEALS Program  <small style="color:#999999">(click to toggle accordion)</small></button>
+        <!-- <div style='clear: both;'></div> -->
+          <div id="workExperience" class="gray accordion">
+          <!-- <div id="workExperience" class="gray accordion"> -->
+            <h2> Industrial Experience <small>(click to toggle accordion)</small></h2>
+          </div>
+        </div>
+<!--           <button class="accordion">  Microsoft Philanthropies TEALS Program  <small style="color:#999999">(click to toggle accordion)</small></button>
           <div class="panel">
             <p> Virtual Teaching Assistant -- Beecher High School, Detroit, MI -- 2023/2024 <br>
                 Content for Section 2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <button class="accordion">Java & Python Instructor -- Radford School, El Paso, TX -- 2019/20, 2020/21 </button>
+          </div> -->
+<!--           <button class="accordion">Java & Python Instructor -- Radford School, El Paso, TX -- 2019/20, 2020/21 </button>
           <div class="panel">
             <p>Content for Section 1</p>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </div>          <!-- close div tag for container -->
-    <script>           
+<!--     <script>           
     // JavaScript to toggle the accordion
-    var acc = document.getElementsByClassName("accordion");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
+      var acc = document.getElementsByClassName("accordion");
+      for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                  panel.style.display = "none";
+              } else {
+                  panel.style.display = "block";
+              }
+          });
+      }
+    </script> -->
+    
+    <script type="text/javascript" src="js/volunteerBuilder.js"></script>
+    <script type="text/javascript">
+    /*
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = "black";
     }
-</script>
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundcolor = "black";
+    }
+    */
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = "black";
+    }
+    /*
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.backgroundColor = "black";
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.backgroundColor = "black";
+    }
+    */
+    </script>
   </body>
 </html>
