@@ -9,13 +9,11 @@
     <link href='http://fonts.googleapis.com/css?family=Geostar' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/new_main.css"> -->
-    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/info.min.css">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <!-- <script type="text/javascript" src="js/info.js"></script> -->
-    <script type="text/javascript" src="js/helper.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
+    <script src="js/info.min.js"></script>
   </head>
   <body>
     <div class="container">	  <!-- open div tag for container -->
@@ -39,29 +37,15 @@
   	      </ul> 
         </div>
         <div class="col-md-10">
-        <!-- <div style='clear: both;'></div> -->
-          <div id="workExperience" class="gray accordion">
-          <!-- <div id="workExperience" class="gray accordion"> -->
-            <h3> Microsoft Philanthropies TEALS Program <small>(click to toggle accordion)</small></h3>
-            <!-- <h2> Industrial Experience <small>(click to toggle accordion)</small></h2> -->
+          <div id="TealsVolunteerExperience" class="gray accordion">
+            <h4 class="volunteer-title"> Microsoft Philanthropies TEALS Program <small>(click to toggle accordion)</small></h4>
           </div>
         </div>
-<!--           <button class="accordion">  Microsoft Philanthropies TEALS Program  <small style="color:#999999">(click to toggle accordion)</small></button>
-          <div class="panel">
-            <p> Virtual Teaching Assistant -- Beecher High School, Detroit, MI -- 2023/2024 <br>
-                Content for Section 2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div> -->
-<!--           <button class="accordion">Java & Python Instructor -- Radford School, El Paso, TX -- 2019/20, 2020/21 </button>
-          <div class="panel">
-            <p>Content for Section 1</p>
-          </div> -->
-        <!-- </div> -->
-      <!-- </div> -->
     </div>          <!-- close div tag for container -->
-    <script type="text/javascript" src="js/volunteerBuilder.js"></script>
+    <script src="js/volunteerBuilder.min.js"></script>
     <script type="text/javascript">
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = "black";
+    if(document.getElementsByClassName('teals-volunteer-entry').length === 0) {
+      document.getElementById('TealsVolunteerExperience').style.backgroundColor = "black";
     }
     </script>
   </body>
