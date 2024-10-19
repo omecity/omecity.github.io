@@ -6,7 +6,7 @@ var teals_volunteer = {
 			"title" : "Virtual Teacher",
 			"employer" : "Callaway High School",
 			"url" : "https://www.jackson.k12.ms.us/callaway",
-			"dates" : "2024/2025",
+			"dates" : "August 2024 - Present",
 			"location" : "Jackson, MS",
 			"description" : "Teaching the implications of Artificial Intelligence (AI) on society and develop a series " + 
 							"of projects that illustrate the variety of ways AI can be used to optimize and predict " + 
