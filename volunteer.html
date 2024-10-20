@@ -40,16 +40,22 @@
           <div id="TealsVolunteerExperience" class="gray accordion">
             <h4 class="volunteer-title"> Microsoft Philanthropies TEALS Program <small>(click to toggle accordion)</small></h4>
           </div>
+          <div id="CSAcademyVolunteerExperience" class="gray accordion">
+              <h4 class="volunteer-title"> CS Academy </h4>
+          </div>
           <div id="StartalkVolunteerExperience" class="gray accordion">
               <h4 class="volunteer-title"> STARTALK </h4>
           </div>
         </div>
       </div>          
-      <script src="js/volunteerBuilder.js"></script>
+      <script src="js/volunteerBuilder.min.js"></script>
       <script>
       // <script type="text/javascript">
       if(document.getElementsByClassName('teals-volunteer-entry').length === 0) {
         document.getElementById('TealsVolunteerExperience').style.backgroundColor = "black";
+      }
+      if(document.getElementsByClassName('csacademy-volunteer-entry').length === 0) {
+        document.getElementById('CSAcademyVolunteerExperience').style.backgroundColor = "black";
       }
       if(document.getElementsByClassName('startalk-volunteer-entry').length === 0) {
         document.getElementById('StartalkVolunteerExperience').style.backgroundColor = "black";
