@@ -1,5 +1,5 @@
 
-let words = ['Lifelong Learner', 'Sport Aficionado', 'Teacher at Heart'];
+let words = ['Lifelong Learner', 'Sport <em>Aficionado</em>', 'Teacher at Heart'];
 
 // Get the output element by its ID
 const outputDiv = document.getElementById('quality');
