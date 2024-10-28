@@ -49,6 +49,10 @@ ul.navbar li {
   width: 120px;
 }
 
+ul.navbar a{
+  color: #0eb26d; 
+}
+
 .quality-box {
   display: flex;
   flex-direction: column;
