@@ -55,6 +55,10 @@ ul.navbar a{
   color: #0eb26d; 
 }
 
+ul.navbar a:hover{
+  color: #6ed0a7; 
+  border-bottom: 2px solid tomato;
+}
 
 .header-block {
   width: 100%;
