@@ -57,7 +57,7 @@ ul.navbar a{
 
 ul.navbar a:hover{
   color: #6ed0a7; 
-  border-bottom: 2px solid tomato;
+  border-top: 3px solid tomato;
 }
 
 .header-block {
