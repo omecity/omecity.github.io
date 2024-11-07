@@ -1,18 +1,20 @@
 
-let words = ['Lifelong Learner', 'Sport <em>Aficionado</em>', 'Teacher at Heart'];
+const div = document.getElementById("typewriter-text");
+const text = "Lifelong Learner, Sport Aficionado, Teacher at Heart.";
 
-// Get the output element by its ID
-const outputDiv = document.getElementById('quality');
+function typeWriter(element, text, i = 0) {
 
-function printQualities() {
-  words.forEach((word, index) => {
-    setTimeout(() => {
-      if (outputDiv) {
-        outputDiv.innerHTML += `<p class="word">${word}</p>`;
-      }
-    }, (index+1) * 1000);  // 1000ms delay between each word
-  });
+if (i === 0){
+  element.textContent = "";
 }
 
-// function call
-printQualities();
+element.textContent += text[i];
+
+if (i === text.length - 1) {
+  return;
+}
+  setTimeout(() => typeWriter(element, text, i + 1), 100); 
+
+}
+
+typeWriter(div, text);
