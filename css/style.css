@@ -1,62 +1,122 @@
-.element.style{
-    margin: 10px;
-    padding: 10px;
-  }
 
-*{
+/* Universal box-sizing */
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 300px){
+/* Basic styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #333333;  
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.element.style {
+    margin: 10px;
+    padding: 10px;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 30px;
+}
+
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav li {
+    margin: 0px;
+    padding: 10px 0;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+ul.nav a {
+    color: #0eb26d;
+}
+
+ul.nav a:hover {
+    color: white;
+}
+
+/* Media Queries */
+
+/* Small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .title-super {
+        font-size: 24px;
+        text-align: center;
+    }
+    ul.nav li {
+        font-size: 18px;
+        text-align: center;
+    }
+    .element.style {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+/* Extra small screens (up to 300px) */
+@media only screen and (max-width: 300px) {
+    body {
+        font-size: 12px;
+    }
+    .title-super {
+        font-size: 20px;
+    }
+    ul.nav li {
+        font-size: 16px;
+    }
+    .element.style {
+        margin: 2px;
+        padding: 2px;
+    }
     p {
         background-color: blue;
     }
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: #333333;  
-    color: #FFFFFF;
-    font-size: 16px; 
+/* Medium screens (600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    body {
+        font-size: 15px;
+    }
+    .title-super {
+        font-size: 28px;
+    }
+    ul.nav li {
+        font-size: 19px;
+    }
 }
 
-
-.text-thin{
-  font-weight: 100;
-}
-
-
-.title-super{
-  font-size: 30px;
-}
-
-
-ul.nav {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
- 
-
-ul.nav li {
-  margin: 0px;
-  padding: 10px 0px 10px 0px;
-  display: block;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-}
-
-
-ul.nav a{
-  color: #0eb26d; 
-}
-
-
-ul.nav a:hover{
-  color: white;
+/* Large screens (900px and above) */
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+    .title-super {
+        font-size: 30px;
+    }
+    ul.nav li {
+        font-size: 20px;
+    }
 }
