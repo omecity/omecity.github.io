@@ -54,6 +54,11 @@ ul.nav a:hover {
     color: white;
 }
 
+
+.text-color {
+  color: #0eb26d;
+}
+
 /* Media Queries */
 
 /* Small screens (up to 600px) */
