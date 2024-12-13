@@ -39,6 +39,36 @@
           max-width: 27%;  
           height: auto;   
         }
+
+      /* Media Queries for Responsive Adjustments */
+
+      @media (max-width: 768px) {
+          .typewriter-container {
+              height: 25vh;       
+              background-size: contain;  
+          }
+
+          #typewriter-text {
+              font-size: calc(1rem + 0.25vw);   
+          }
+
+          .float-img {
+              float: none;      
+              margin: 10px auto; 
+              display: block;
+          }
+      }
+
+      @media (max-width: 480px) {
+          .typewriter-container {
+              height: 30vh;       
+          }
+
+          #typewriter-text {
+              font-size: 1rem;        
+              padding: 0.5em; 
+          }
+      }
     </style>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.min.css">
