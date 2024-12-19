@@ -140,7 +140,7 @@ ul.nav a:hover {
     }
 }
 
-.typewriter-container {
+/*.typewriter-container {
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -170,10 +170,10 @@ ul.nav a:hover {
   max-width: 27%;  
   height: auto;   
 }
-
+*/
 /* Media Queries for Responsive Adjustments */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .typewriter-container {
       height: 25vh;       
       background-size: contain;  
@@ -199,4 +199,4 @@ ul.nav a:hover {
       font-size: 1rem;        
       padding: 0.5em; 
   }
-}
+}*/
