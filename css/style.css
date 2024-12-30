@@ -139,3 +139,60 @@ ul.nav a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+.typewriter-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/green-rain-bits-bg.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#typewriter-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.intro {
+    padding-top: 20px;
+}
+
+.float-img {
+    float: right;
+    margin: 5px 0px 20px 20px; /* Adjust padding around the image */
+    max-width: 300px;          /* Adjust the size of the image */
+}
+
+/* Media Queries for Responsive Adjustments */
+
+@media (max-width: 768px) {
+  .typewriter-container {
+      height: 25vh;       
+      background-size: contain;  
+  }
+  #typewriter-text {
+      font-size: calc(1rem + 0.25vw);   
+  }
+  .float-img {
+      float: none;      
+      margin: 10px auto; 
+      display: block;
+  }
+}
+@media (max-width: 480px) {
+  .typewriter-container {
+      height: 30vh;       
+  }
+  #typewriter-text {
+      font-size: 1rem;        
+      padding: 0.5em; 
+  }
+}
